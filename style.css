@@ -1,88 +1,130 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
 
-  .ribbon5 {
-    width: 2100px;
-    display: inline-block;
-    position: relative;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 30px;/*文字サイズ*/
-    background: #7f9dfb;/*背景色*/
-    color: #FFF;/*文字色*/
-    box-sizing: border-box;
-  }
-  .ribbon5 h3 {
-    margin: 0;
-    padding: 0 20px 0 15px;
-    border-top: dashed 1px #364e96;
-    border-bottom: dashed 1px #364e96;
-    line-height: 46px;
-  }
-  
-  .ribbon5:after {
-    position: absolute;
-    content: '';
-    z-index: 1;
-    top: 0;
-    right: 0;
-    width: 0px;
-    height: 0px;
-    border-width: 30px 15px 30px 0px;
-    border-color: transparent #fff transparent transparent;
-    border-style: solid;
-  }
-  
-  .black{
-    font-size: 30px;
-    text-align: center;
-      padding: 0em;/*文字周りの余白*/
-      color: #191970;
-      color: #191970;
-  -webkit-text-stroke: 1px yellow;
-  font-size: 40px !important;
-  color: #191970;
-      background: #eaf3ff;/*背景色*/
-      border-bottom: solid 3px #516ab6;/*下線*/
-    }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .text_wrapper{
-    height: 356px;
-    border: 1px solid yellow;
-    display:flex;
-    margin: 5px;
-  }
-  
-  .box{
-    height: 45px;
-    border: solid 1px red;
-    color: #668ad8;
-    font-size: 30px;
-    border: dashed 2px #668ad8;
-    background: #f1f8ff; 
-  }
-  .box1{
-    height: 50px;
-    width: 280px;
-    border: solid 1px red;
-    color: #ffc668;
-    font-size: 40px;
-    border: dashed 2px #191970;
-    background: #f1f8ff; 
-  }
-  .blue{
-    font-size: 30px;
-    text-align: center;
-      padding: 0em;/*文字周りの余白*/
-      color: #191970;
-      color: #191970;
-  -webkit-text-stroke: 1px yellow;
-  font-size: 40px !important;
-  color: #191970;
-      background: #eaf3ff;/*背景色*/
-      border-bottom: solid 3px #516ab6;/*下線*/
-    }
-  
+.main {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
 
-  
-  
+.main h3 {
+  margin: 0;
+}
+
+.black {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.text_wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text_wrapper img {
+  width: 100%;
+  max-width: 150px; /* Set a maximum width for each image */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px; /* Add some spacing between images */
+}
+
+
+.box {
+  background-color: #ecf0f1;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.box1 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#data-form {
+  margin-top: 30px;
+}
+
+#Title {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.comment {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%; 
+}
+
+
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0; 
+ }
+ 
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  .box, .box1 {
+      margin: 10px 0;
+  }
+}
